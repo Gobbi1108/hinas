@@ -1,0 +1,19 @@
+{
+  "name": "hinas",
+  "version": "1.0.0",
+  "description": "Site institucional (portfólio) do **HiNaS — Grupo de Pesquisa Histórias de Vida, Narrativas e Subjetividades**, vinculado ao Programa de Pós-Graduação em Educação da UNIMEP. É um site de página única (single-page) com navegação por 5 abas: **Home, Sobre, Integrantes, Projetos, Notícias**. Objetivo: apresentar o grupo, seu texto de identidade, seus integrantes e reservar espaço para projetos e notícias (ainda sem conteúdo).",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

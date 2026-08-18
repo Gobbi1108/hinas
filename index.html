@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiNaS</title>
+  <meta name="description" content="Um convite para conhecer um grupo de estudos especial aonde há espaço de trabalho comum, dedicado aos estudos da constituição dos sujeitos nas relações sociais.">
+
+  <link rel="canonical" href="https://hinas.com.br/">
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn, Telegram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="HiNaS — Grupo de Pesquisa">
+  <meta property="og:url" content="https://hinas.com.br/">
+  <meta property="og:title" content="HiNaS — Histórias de Vida, Narrativas e Subjetividades">
+  <meta property="og:description" content="Um convite para conhecer um grupo de estudos especial aonde há espaço de trabalho comum, dedicado aos estudos da constituição dos sujeitos nas relações sociais.">
+  <meta property="og:image" content="https://hinas.com.br/assets/logo-light.jpeg">
+  <meta property="og:image:alt" content="Logo do HiNaS — lâmpada de folhas coloridas">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HiNaS — Histórias de Vida, Narrativas e Subjetividades">
+  <meta name="twitter:description" content="Um convite para conhecer um grupo de estudos especial aonde há espaço de trabalho comum, dedicado aos estudos da constituição dos sujeitos nas relações sociais.">
+  <meta name="twitter:image" content="https://hinas.com.br/assets/logo-light.jpeg">
+
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=d89cf1c3">
+</head>
+<body>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav">
+    <a class="nav__brand" href="/" data-tab="home" aria-label="Ir para Home">
+      <img src="assets/logo-light.jpeg" alt="HiNaS" class="nav__logo">
+      <span class="nav__wordmark">HiNaS</span>
+    </a>
+    <div class="nav__tabs">
+      <a class="nav__tab" href="/" data-tab="home"><span>Home</span></a>
+      <a class="nav__tab" href="/sobre" data-tab="sobre"><span>Sobre</span></a>
+      <a class="nav__tab" href="/integrantes" data-tab="integrantes"><span>Integrantes</span></a>
+      <a class="nav__tab" href="/teses" data-tab="teses"><span>Teses e Dissertações</span></a>
+      <a class="nav__tab" href="/producoes" data-tab="producoes"><span>Produções</span></a>
+      <a class="nav__tab" href="/projetos" data-tab="projetos"><span>Projetos</span></a>
+      <a class="nav__tab" href="/noticias" data-tab="noticias"><span>Notícias</span></a>
+    </div>
+  </nav>
+
+  <main class="main">
+
+    <!-- ==================== HOME ==================== -->
+    <section class="screen" data-screen="home" hidden>
+
+      <!-- HERO A — AURORA -->
+      <div class="hero-a" data-hero="a">
+        <div class="hero-a__bg">
+          <div class="blob blob--gold"></div>
+          <div class="blob blob--coral"></div>
+          <div class="blob blob--teal"></div>
+          <div class="blob blob--plum"></div>
+        </div>
+        <div class="hero-a__grid">
+          <div class="hero-a__col hero-a__col--text">
+            <div class="eyebrow eyebrow--blue">Grupo de Pesquisa · Diretório CNPq</div>
+            <h1 class="display display--h1">Histórias de vida,<br><em class="tx-coral">narrativas</em> e <span class="tx-gold">subjetividades</span></h1>
+            <p class="lede">Um espaço de trabalho comum, dedicado aos estudos da constituição dos sujeitos nas relações sociais.</p>
+            <div class="btn-row">
+              <button class="btn btn--primary" data-tab="sobre">Conheça o grupo</button>
+              <button class="btn btn--ghost" data-tab="integrantes">Ver integrantes</button>
+            </div>
+          </div>
+          <div class="hero-a__col hero-a__col--photo">
+            <div class="photo-morph">
+              <div class="img-slot" data-slot="grupo-hero"><img src="assets/logo-light.jpeg" alt="Grupo HiNaS"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO B — NOTURNO -->
+      <div class="hero-b" data-hero="b" hidden>
+        <div class="hero-b__glow"></div>
+        <div class="hero-b__ring hero-b__ring--gold"></div>
+        <div class="hero-b__ring hero-b__ring--coral"></div>
+        <img src="assets/logo-dark.jpeg" alt="HiNaS" class="hero-b__logo">
+        <p class="hero-b__tagline">Grupo de Pesquisa · UNIMEP</p>
+        <button class="btn btn--gold" data-tab="sobre">Conheça o grupo</button>
+      </div>
+
+      <!-- HERO C — EDITORIAL -->
+      <div class="hero-c" data-hero="c" hidden>
+        <div class="hero-c__photo">
+          <div class="img-slot img-slot--dark" data-slot="grupo-hero"><img src="assets/logo-light.jpeg" alt="Grupo HiNaS"></div>
+        </div>
+        <div class="hero-c__text">
+          <div class="eyebrow eyebrow--blue">Est. no Diretório CNPq</div>
+          <h1 class="display display--h1c">Narrar a vida<br>como método<br><em class="tx-coral">de pesquisa.</em></h1>
+          <div class="rule-gold"></div>
+          <p class="lede lede--sm">Memória, formação de professores e práticas pedagógicas atravessadas pelas narrativas (auto)biográficas.</p>
+          <button class="btn btn--primary btn--self" data-tab="sobre">Conheça o grupo</button>
+        </div>
+      </div>
+
+      <!-- Eixos de trabalho -->
+      <div class="lines">
+        <div class="lines__label">Eixos de trabalho</div>
+        <div class="lines__grid" data-lines-strip></div>
+      </div>
+
+    </section>
+
+    <!-- ==================== SOBRE ==================== -->
+    <section class="screen" data-screen="sobre" hidden>
+      <div class="sobre__intro">
+        <div class="eyebrow eyebrow--blue fade-1">Sobre o grupo</div>
+        <h2 class="display display--h2 fade-2">Um espaço comum para <em class="tx-coral">pensar a formação</em> a partir das histórias de vida.</h2>
+        <p class="prose fade-3">O HiNaS é um grupo de pesquisas que, desde 2013, fundado na Universidade Metodista de Piracicaba (UNIMEP), reúne pesquisadoras e pesquisadores de diferentes universidades do país. A partir de 2024, o grupo passa a ser sediado na Universidade São Francisco (USF) e na Pontifícia Universidade Católica de Campinas (PUC-Campinas). De acordo com as afinidades temáticas das pesquisas, voltadas para a constituição dos sujeitos nas relações sociais, instituímos um espaço de trabalho comum para fortalecer a participação de estudantes e pesquisadores da área de educação. Privilegiamos as relações entre narrativa (auto)biográficas, memória, formação de professores e práticas pedagógicas. Os trabalhos do grupo podem ser encontrados em publicações em parceria de seus membros (artigos e trabalhos em eventos).</p>
+        <div class="btn-row fade-3">
+          <a class="btn btn--primary" href="http://dgp.cnpq.br/dgp/espelhogrupo/802230" target="_blank" rel="noopener">Diretório CNPQ</a>
+          <button class="btn btn--ghost" data-tab="integrantes">Ver integrantes</button>
+        </div>
+      </div>
+
+      <div class="quote">
+        <blockquote class="quote__text">"Nossas produções têm o compromisso de sistematizar experiências de pesquisa e formação, docente e discente, nas suas dimensões epistemológicas e metodológicas."</blockquote>
+      </div>
+
+      <div class="sobre__intro">
+        <p class="prose">Trabalhos individuais dos pesquisadores também refletem interfaces oriundas dos intercâmbios do grupo.</p>
+      </div>
+
+      <div class="cards" data-lines-cards></div>
+
+      <div class="meta">
+        <div class="meta__item"><div class="meta__k">Instituição</div><div class="meta__v">PPGE · USF</div></div>
+        <div class="meta__item"><div class="meta__k">Área</div><div class="meta__v">Educação</div></div>
+        <div class="meta__item"><div class="meta__k">Registro</div><div class="meta__v">Diretório de Grupos · CNPq</div></div>
+      </div>
+    </section>
+
+    <!-- ==================== INTEGRANTES ==================== -->
+    <section class="screen" data-screen="integrantes" hidden>
+      <div class="members">
+        <div class="eyebrow eyebrow--blue">Liderança</div>
+        <h2 class="display display--h2">Líderes</h2>
+        <p class="members__intro">Pesquisadoras responsáveis pela coordenação do grupo.</p>
+        <div class="members__grid" data-leaders></div>
+      </div>
+      <div class="spacer-40"></div>
+      <div class="members members--tight">
+        <div class="eyebrow eyebrow--blue">Integrantes</div>
+        <h2 class="display display--h2">Pesquisadoras e pesquisadores</h2>
+        <p class="members__intro">Profissionais da educação que compõem o grupo, reunidos por afinidades temáticas de suas pesquisas.</p>
+        <div class="members__grid" data-members></div>
+      </div>
+      <div class="spacer-80"></div>
+    </section>
+
+    <!-- ==================== TESES E DISSERTAÇÕES ==================== -->
+    <section class="screen" data-screen="teses" hidden>
+      <div class="teses">
+        <div class="eyebrow eyebrow--blue">Teses e Dissertações</div>
+        <h2 class="display display--h2">Trabalhos do grupo</h2>
+        <p class="teses__intro">Teses e dissertações produzidas no âmbito do HiNaS. Clique em "Ver mais" para ler o resumo completo ou acesse o trabalho na íntegra.</p>
+        <div class="teses__list" data-teses></div>
+      </div>
+    </section>
+
+    <!-- ==================== PRODUÇÕES ==================== -->
+    <section class="screen" data-screen="producoes" hidden>
+      <div class="teses">
+        <div class="eyebrow eyebrow--blue">Produções</div>
+        <h2 class="display display--h2">Produções do grupo</h2>
+        <p class="teses__intro">Artigos, capítulos e trabalhos em eventos produzidos pelos integrantes do HiNaS. Clique em “Ver mais” para ler o resumo completo ou acesse a publicação.</p>
+        <div class="teses__list" data-producoes></div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="screen" data-screen="projetos" hidden>
+      <div class="empty">
+        <div class="blob blob--teal blob--empty"></div>
+        <div class="empty__spinner"><div class="empty__spinner-ring"></div></div>
+        <div class="eyebrow eyebrow--blue">Projetos</div>
+        <h2 class="display display--h3">Em construção</h2>
+        <p class="empty__text">Esta seção reunirá os projetos de pesquisa do grupo. Envie os títulos, descrições e responsáveis e daremos vida a ela.</p>
+      </div>
+    </section>
+
+    <!-- ==================== NOTÍCIAS ==================== -->
+    <section class="screen" data-screen="noticias" hidden>
+      <div class="empty">
+        <div class="blob blob--gold blob--empty"></div>
+        <div class="empty__bars">
+          <span class="empty__bar empty__bar--coral"></span>
+          <span class="empty__bar empty__bar--gold"></span>
+          <span class="empty__bar empty__bar--teal"></span>
+          <span class="empty__bar empty__bar--plum"></span>
+        </div>
+        <div class="eyebrow eyebrow--blue">Notícias</div>
+        <h2 class="display display--h3">Em construção</h2>
+        <p class="empty__text">Aqui ficarão as notícias e novidades do grupo. Envie as informações para começarmos a preencher.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <img src="assets/logo-light.jpeg" alt="HiNaS" class="footer__logo">
+      <div>
+        <div class="footer__name">HiNaS</div>
+        <div class="footer__sub">Histórias de Vida, Narrativas e Subjetividades</div>
+      </div>
+    </div>
+    <div class="footer__meta">PPGE · USF<br>Diretório de Grupos de Pesquisa · CNPq</div>
+  </footer>
+
+  <script src="app.js?v=55409eb7"></script>
+</body>
+</html>

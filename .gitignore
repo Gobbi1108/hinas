@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Pasta chest (arquivos originais/backups)
+chest/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações locais do Claude
+.claude/
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,46 @@
+# HiNaS — SPA fallback (Apache / Locaweb hospedagem compartilhada).
+# Qualquer path que não seja arquivo ou diretório real serve index.html;
+# o app.js lê o pathname e mostra a aba certa.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Força HTTPS: qualquer acesso HTTP redireciona para HTTPS (301 permanente).
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Aba "Indicações de leitura" virou "Notícias": URL antiga redireciona (301).
+  RewriteRule ^indicacoes/?$ /noticias [L,R=301]
+
+  # SPA fallback
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# ---- MIME ----
+# As fotos dos integrantes sao .webp. Apache antigo nao conhece o tipo e serve
+# como application/octet-stream; declarar aqui evita depender da versao do servidor.
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+
+# ---- Cache (evita site cacheado/desatualizado no navegador) ----
+<IfModule mod_headers.c>
+  # HTML: nunca serve cache sem revalidar. Garante que o navegador sempre pega
+  # o index.html novo (que aponta pros assets com ?v=<hash> atuais).
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # CSS/JS: cache longo e imutavel. Seguro porque o ?v=<hash> muda a URL quando
+  # o conteudo muda, forcando o download da versao nova (ver skill versionar-assets).
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Imagens / fontes / icones: cache longo. Troque o nome do arquivo se mudar.
+  <FilesMatch "\.(png|jpe?g|gif|svg|webp|ico|woff2?|ttf|eot)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
