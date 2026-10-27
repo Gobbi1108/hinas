@@ -9,7 +9,7 @@ chest/
 Thumbs.db
 
 # Configurações locais do Claude
-.claude/
+.claude/settings.local.json
 
 # Logs
 *.log
